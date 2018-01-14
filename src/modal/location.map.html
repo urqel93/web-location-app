@@ -1,0 +1,9 @@
+<div>
+  {{coordinates.date | date: 'dd-MM-yyyy HH:mm'}}
+</div>
+<agm-map [latitude]="szerokosc" [longitude]="dlugosc" [zoom]="16">
+  <agm-marker [latitude]="szerokosc" [longitude]="dlugosc"></agm-marker>
+</agm-map>
+<div style="text-align: center">
+  <button mat-raised-button color="primary" (click)="close()">Zamknij</button>
+</div>

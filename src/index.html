@@ -6,9 +6,53 @@
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/jquery/dist/jquery.min.js">
+  <link rel="stylesheet" href="../node_modules/@angular/material/prebuilt-themes/indigo-pink.css">
+  <style type="text/css">
+    #pre-bootstrap {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      cursor: default;
+      background: rgb(255, 255, 255);
+
+    }
+
+    @keyframes loaderFadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(.5);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    #pre-bootstrap {
+      text-align: center;
+      color: #000;
+      animation: .5s ease-out 0s 1 loaderFadeIn;
+    }
+
+    #pre-bootstrap p {
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <app-root></app-root>
+<app-root>
+  <div id="pre-bootstrap">
+        <h3>Ładowanie aplikacji</h3>
+        <p>Proszę czekać!</p>
+  </div>
+</app-root>
 </body>
 </html>
