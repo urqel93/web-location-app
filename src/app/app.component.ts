@@ -1,6 +1,7 @@
 import {AfterViewInit, Component} from '@angular/core';
 import {MatDialog} from '@angular/material';
 import {LocationMapModal} from '../modal/location.map.modal';
+import "../styles.css";
 
 
 export class SavedCoordinates {
